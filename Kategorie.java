@@ -8,6 +8,7 @@ public class Kategorie {
         return kategorieLista;
     }
 
+
     public void dodajKategorie(String nowaKategoria) {
         kategorieLista.add(nowaKategoria);
     }
