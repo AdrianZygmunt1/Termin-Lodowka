@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -7,8 +8,8 @@ public class Main {
 
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-
+        Kategorie kategorie = new Kategorie();
+        List<String>listaKategoriMain=kategorie.getKategorieLista();
         while(true) {
             System.out.println("Wybierz numer: \n" +
                     "1. Najbliższe terminy\n" +
@@ -23,7 +24,11 @@ public class Main {
             } else if (wybor == 3) {
 
             } else if (wybor == 4) {
-
+                for(String kategoriaFor:listaKategoriMain){
+                    int i=1;
+                    System.out.println(i+". "+kategoriaFor);
+                    i++;
+                }
             }else {
                 System.out.println("Błedny numer\n\n");
             }

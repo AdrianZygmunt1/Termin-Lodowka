@@ -1,12 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Kategorie {
-    String kategorieP;
-
-    public Kategorie(String kategorieP) {
-        this.kategorieP = kategorieP;
+    private List<String>kategorieLista= new ArrayList<>();
+    
+    public List<String> getKategorieLista() {
+        return kategorieLista;
     }
 
-    public void DodajK(String kategoriePodane) {
-        this.kategorieP = kategoriePodane;
+    public void dodajKategorie(String nowaKategoria) {
+        kategorieLista.add(nowaKategoria);
     }
 }
